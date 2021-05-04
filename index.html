@@ -2,12 +2,71 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Résumé</title>
-	<link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
+    <title>Marvel</title>
   </head>
-  <body>
-   <main>
-   
-   </main>
-  </body>
+  <style>
+ h1 {
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */ 
+    font-size: 250%; /* Размер шрифта в процентах */ 
+   } 
+.module {
+border-position: 50% 19%;
+    text-align:  center;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to center, 
+      white, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+.module1 {
+text-align: right;
+  max-width: 400px;
+  margin-left:65%;
+  padding: 2rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to bottom, 
+      white, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+a{
+margin-left:10%;
+margin-top:5%;
+color:white;
+font: 1.5em Arial, sans-serif;
+    text-shadow: black 1px 1px 0, red -1px -1px 0, 
+                 red -1px 1px 0, red 1px -1px 0;
+}
+</style>
+<script type="text/javascript">
+  function animateText(id, text, i) {
+    document.getElementById(id).innerHTML = text.substring(0, i);
+    i++;
+    if (i > text.length) i = 0;
+    setTimeout("animateText('" + id + "','" + text + "'," + i + ")", 100);
+  }
+</script>
+  <body background="3.png" background-position:fixed;="" "="" text="#000000"
+  onload = 'animateText("dynamic-text", "help.marvel.com", 0);'>
+<h1 align = "center" class = "module">
+           Marvel
+</h1>
+<a id = 'dynamic-text' href="https://help.marvel.com/hc/en-us"></a>
+<div class="module1">
+<p align = "center"><strong>Marvel Entertainment - is an American entertainment company, formed by the merger of Marvel Entertainment Group, Inc. and ToyBiz.</strong></p>
+<p align = "center"><strong>The company is a wholly owned subsidiary of The Walt Disney Company, and is mainly known for its comic books by Marvel Comics, as well as its forays into films, including those within the Marvel Cinematic Universe.</strong></p>
+
+ </div>
+ </body>
 </html>
