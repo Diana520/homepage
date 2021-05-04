@@ -2,9 +2,190 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Résumé</title>
+    <title>Marvel</title>
   </head>
-  <body>
-    ― Hello World! &#x1F609;
-  </body>
+  <style>
+ h1 {
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */ 
+    font-size: 250%; /* Размер шрифта в процентах */ 
+   } 
+.module {
+border-position: 50% 19%;
+    text-align:  center;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to center, 
+      white, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+.module1 {
+text-align: right;
+  max-width: 400px;
+  margin-left:65%;
+  padding: 2rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to bottom, 
+      white, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+a{
+margin-left:10%;
+margin-top:5%;
+color:white;
+font: 1.5em Arial, sans-serif;
+    text-shadow: black 1px 1px 0, red -1px -1px 0, 
+                 red -1px 1px 0, red 1px -1px 0;
+}
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    border-bottom: 1px dotted green;
+	font-size:250%;
+    padding: 0;
+	margin-left:70%;
+	font-family: 'Lucida Sans Unicode';
+    color: white;
+    cursor: pointer;
+    display: inline-block; 
+}
+.hide:checked + label {
+    color: black;
+    border-bottom: 0;
+}
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
+
+/* demo контейнер */
+.demo {
+    margin: 5% 10%;
+}
+.ex1,.ex2,.ex3,.ex4,.ex5,.ex6,.ex7,.ex8,.ex9,.ex10
+{padding:10px;width:300px;height:100px;margin:0 auto;text-align:center;position:relative}
+.ex1 h1:after {content: "";
+position: absolute;
+height: 2px;
+width: 100px;
+background:rgb(81, 227, 213);
+top: 120%;
+margin: 0 auto;
+left: 0;
+right: 0;}
+.ex1 h1:before {content: "";
+position: absolute;
+height: 10px;
+width: 10px;
+background:rgb(81, 227, 213);
+top: 105%;
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+margin: 0 auto;
+left: 0;
+right: 0;}
+.block_1{width:1050px;height:300px;overflow:hidden;position:relative;margin-left:150px;background:url(https://www.slashfilm.com/wp/wp-content/images/stanlee-howtodraw-cover-frontpage.jpg);background-size:cover}
+.block_2{position:absolute; visibility:hidden;left:1px;background:rgba(0, 0, 0, 0.4392156862745098);font-size:20px;color: white;width: 1050px;height: 300px;top:160px}
+.block_2 p {padding: 110px 0px;text-align: center;}
+.block_1:hover .block_2{visibility:visible;transition:1s;-webkit-transition:1s;transform:translatey(-160px);-webkit-transform:translatey(-160px)}
+.block_1:hover{filter:sepia(50%);-webkit-filter:sepia(60%);transition:0.6s;-webkit-transition:0.6s;}
+</style>
+<script type="text/javascript">
+  function animateText(id, text, i) {
+    document.getElementById(id).innerHTML = text.substring(0, i);
+    i++;
+    if (i > text.length) i = 0;
+    setTimeout("animateText('" + id + "','" + text + "'," + i + ")", 100);
+  }
+  
+</script>
+  <body background="3.png" background-position:fixed;="" "="" text="#000000"
+  onload = 'animateText("dynamic-text", "help.marvel.com", 0);'>
+<h1 align = "center" class = "module">
+           Marvel
+</h1>
+<a id = 'dynamic-text' href="https://help.marvel.com/hc/en-us"></a>
+<div class="module1">
+<p align = "center"><strong>Marvel Entertainment - is an American entertainment company, formed by the merger of Marvel Entertainment Group, Inc. and ToyBiz.</strong></p>
+<p align = "center"><strong>The company is a wholly owned subsidiary of The Walt Disney Company, and is mainly known for its comic books by Marvel Comics, as well as its forays into films, including those within the Marvel Cinematic Universe.</strong></p>
+ </div>
+ 
+<div class="demo">
+    <input type="checkbox" id="hd-1" class="hide"/>
+    <label for="hd-1" >1960s</label>
+    <div>
+        Amid the success of DC Comics in reviving superhero comics in the late 1950s and early 1960s, especially with the American Justice League, Marvel decided to follow.
+        Editor and writer Stan Lee teamed up with freelance artist Jack Kirby to create the Fantastic Four, somewhat reminiscent of the adventurer quartet from the 1957 Challengers of the Unknown comic Kirby created for DC.
+        Stan Lee's name has become one of the most famous in the comic book industry. Most of the heroes created at that time belong to his authorship - it is they who make up the bulk of the popular characters, comics about which are being published today.
+        In 1968, company founder Martin Goodman sold Marvel Comics and all of his other publishing companies to the Perfect Film and Chemical Corporation. All of Goodman's former companies were merged into the Magazine Management Co., while Goodman himself remained the publisher.
+    </div>
+    <br/>
+    <br/>
+    <input type="checkbox" id="hd-2" class="hide"/>
+    <label for="hd-2">1970s</label>
+    <div>
+        In 1970 Stan Lee saw an opportunity to captivate the British public without using reprinted American material. In October 1976, Marvel created a "British hero for the British", Captain Britain, a comic strip about which was first released only in the UK and later in America.
+In 1971, the US Department of Education and Health asked Stan Lee to create a comic strip about the dangers of drug use. Lee agreed and introduced a story into the Spider-Man comic, in which he showed how dangerous drugs are.
+Goodman retired from publishing in 1972 and was replaced by Lee, who retired from his day-to-day work at Marvel. Comics, created under the auspices of the new chief editors, fell on a period of another lull in the industry.
+In the mid-1970s, Marvel had a markedly diminishing network of newsstands selling their comics. By the end of the decade, Marvel's financial position had improved thanks to the development of its own distribution network (the company began to master comic stores along with newsstands), some revived series (like "The Uncanny X-Men"), new hits from the team of writer Chris Claremont and artist John Byrne. and a more realistic comic strip about urban crime fighter "Daredevil" by author / artist Frank Miller.
+    </div>
+    <br/>
+    <br/>
+    <input type="checkbox" id="hd-3" class="hide"/>
+    <label for="hd-3" >1980s</label>
+    <div>
+       Despite the success of Marvel in the early 1980s, the publisher began to lose ground to DC in the second half of the decade, from the moment several former Marvel stars deserted the enemy. DC took the lead with comics and miniseries such as Watchmen, The Dark Knight Returns, Crisis on Infinite Earths, Superman relaunch by John Byrne, and Swamp Thing by Alan Moore.
+In 1986, Marvel was sold to New World Entertainment, which three years later resold Marvel to MacAndrews and Forbes, which was owned by Revolon CEO Ronald Perlman.
+    </div>
+    <br/>
+    <br/>
+    <input type="checkbox" id="hd-4" class="hide"/>
+    <label for="hd-4">1990s</label>
+    <div>
+       Marvel made a lot of money and reader recognition during the comic book boom in the early 90s, launching the successful 2099 comic series with future events (Spider-MAN 2099, and the like) and a creatively daring if unfortunate imprint Razorline, which produced superhero comic strips by writer and filmmaker Clive Barker. However, in the middle of the decade, the industry went into a recession, and in December 1996, Marvel took advantage of Chapter 11 of the US Bankruptcy Code.
+    </div>
+	<br/>
+    <br/>
+	<input type="checkbox" id="hd-5" class="hide"/>
+    <label for="hd-5">2000s</label>
+    <div>
+       With the advent of the new millennium, Marvel Comics escaped bankruptcy and began to try to diversify its offerings. In 2001, Marvel ditched the Comics Code Authority and established its own Marvel Rating System for comics. The first comic of this millennium that was not Code-marked was "X-Force" # 119 (October 2001).
+    </div>
+	<br/>
+    <br/>
+	<input type="checkbox" id="hd-6" class="hide"/>
+    <label for="hd-6">2010-th</label>
+    <div>
+      In the spring of 2013, the entire Marvel team, including the company's senior management team, moved from Manhattan, where they had lived under the roof of Raleigh Studios for the past four years, to the northern suburbs of Los Angeles.
+</div>
+</div>
+<div class="ex1"><h1>Creator</h1></div>
+<div class="block_1">
+<div class="block_2">
+<p>There is a nice tradition in the Marvel Comics - every superhero movie has a cameo with Stan Lee. This is the kind of writer who came up with in the years of a very distant youth Spider-Man, Hulk, Doctor Strange, Fantastic Four, Iron Man, Daredevil, Thor, X-Men. In general, the parent of most Marvel wonder people.</p>
+</div>
+</div>
+ </body>
 </html>
